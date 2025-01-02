@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ian Dsilva's Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./styles/main.css" />
+    </head>
+
+    <body data-scroll-container>
+        <nav class="nav container" data-scroll-section>
+            <div class="nav__email-container">
+                <a
+                    class="nav__email-link"
+                    href="mailto:dsilvaian.info@gmail.com"
+                    aria-label="Let's Chat!"
+                >
+                    <span><ion-icon name="mail-outline"></ion-icon></span>
+                    <span>Let's Chat!</span>
+                </a>
+            </div>
+            <ul class="nav__links" id="nav-links">
+                <li class="nav__item">
+                    <a class="nav__link" href="#about-section">About</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#projects-section">Projects</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#data-section">Data Visualizations</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#experience-section"
+                        >Experience</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#contact-section">Contact</a>
+                </li>
+                <li class="nav__item">
+                    <a
+                        class="nav__button"
+                        href="./assets/Ian_Dsilva_Resume.pdf"
+                        >Resume</a
+                    >
+                </li>
+            </ul>
+            <button
+                type="button"
+                class="nav__toggle nav__toogle--active"
+                id="nav-button"
+            >
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </button>
+        </nav>
+
+        <main>
+            <header class="hero container" data-scroll-section>
+                <!-- <div class="hero__image-container">
+                    <img class="hero__image" src="./assets/profile_image_5.png" alt="Reuel D'silva">
+                </div> -->
+                <h1 class="hero__title">
+                    <span class="hero__title-line">Hello there! 👋🏻</span>
+                    <span class="hero__title-line">I'm Ian Dsilva</span>
+
+                    <span class="hero__title-line"
+                        >Transforming Your Data into Meaningful Insights</span
+                    >
+                    <span class="hero__title-line"
+                        >Let's dive deeper into the data!</span
+                    >
+                </h1>
+                <a
+                    class="hero__cta"
+                    href="#projects-section"
+                    aria-label="Check out my work"
+                >
+                    <span>Check my projects!</span>
+                </a>
+            </header>
+
+            <section
+            class="about container"
+            id="about-section"
+            data-scroll-section
+        >
+            <h2 class="about__title section-heading">
+                A little bit about me
+            </h2>
+            <div class="about__description">
+                <p>
+                    Hey there! I'm Ian Dsilva,<br />
+                    I am passionate about uncovering meaningful insights, building predictive models, and crafting data-driven solutions to solve complex problems with precision and creativity.
+                </p>
+                <p>
+                    🙋🏻 I’m a data enthusiast passionate about transforming raw data into impactful insights. I love diving into complex datasets to uncover trends and help teams make data-driven decisions.
+                </p>
+                <p>
+                    🎯 Currently, I'm exploring the frontiers of Data Science and Data Engineering. 
+                </p>
+                <p>
+                    🤖 I have a paper published in the domain of AI in Medicine, where I applied my skills in data analysis, machine learning, and programming to tackle real-world challenges in healthcare.
+                <p>
+                    📈 I'm excited about opportunities to apply my expertise, grow my skill set, and contribute to innovative projects that push the boundaries of data science.
+                </p>
+                </p>
+
+                <div class="about__skills">
+                    <h3 class="about__skills__heading">
+                        Here are a few technologies I've been working with
+                        lately:
+                    </h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>R Programming</li>
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                        <li>PyTorch</li>
+                        <li>AWS Cloud Computing</li>
+                        <li>Google Cloud Platform</li>
+                        <li>Apache Spark</li>
+                        <li>Apache Hadoop</li>
+                        <li>Docker</li>
+                        <li>Tableau</li>
+                        <li>PowerBI</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section
+        class="experience container"
+        id="experience-section"
+        data-scroll-section
+    >
+        <h2 class="experience__title section-heading">
+            Places I've worked at
+        </h2>
+
+        <ul class="experience__companies" id="company_list">
+            <li id="experience__company-highlight"></li>
+            <li
+                class="experience__company experience__company--active"
+                id="company-1"
+            >
+                CrowdDoing
+            </li>
+            <li class="experience__company" id="company-02">
+                Boston University
+            </li>
+            <li class="experience__company" id="company-03">
+                Vervali Systems
+            </li>
+            <li class="experience__company" id="company-04">
+                Marsh Precision Engineering
+            </li>
+            <li class="experience__company" id="company-05">
+                Murzello Bros and Company
+            </li>
+        </ul>
+
+        <ul class="experience__descriptions" id="company_descriptions">
+            <li
+                class="experience__description experience__description--visible"
+            >
+                <h3 class="experience__description__position">
+                    Data Analyst Volunteer
+                </h3>
+                <!-- <h3 class="experience__description__position--company">
+                    Department of Physics and Astronomy at LSU
+                </h3> -->
+                <p class="experience__description__date">
+                    March 2023 - Present
+                </p>
+                <ul>
+                    <li>
+                        Increased stakeholder impact by 20% through improved investment matching, using Python and Scikit-learn to develop predictive models that identified projects with high impact on social and environmental factors, for companies to invest.
+                    </li>
+                    <li>
+                        Reduced impact assessment time by 30% through the implementation of AWS Step Functions and AWS Glue to create data pipelines that tracked and analyzed social and environmental metrics.
+                    </li>
+                    <li>
+                        Improved investor decision-making with interactive PowerBI dashboards that visualized impact metrics alongside financial performance.
+                    </li>
+                    <li>
+                        Catalyzed a 35% increase in impact-focused capital allocation by presenting SQL-based analytics.
+                    </li>
+                </ul>
+            </li>
+            <li class="experience__description">
+                <h3 class="experience__description__position">
+                    Event Ambassador and Office Assistant 
+                </h3>
+                <!-- <h3 class="experience__description__position--company">
+                    Marsh Precision Engineering
+                </h3> -->
+                <p class="experience__description__date">
+                    August 2023 - January 2024
+                </p>
+                <ul>
+                    <li>
+                        Achieved a 15% reduction in event planning costs through strategic vendor negotiations and optimized resource allocation, resulting in an estimated $50,000 annual savings.
+                    </li>
+                    <li>
+                        Implemented and managed a robust event database system, tracking over 10,000 attendee profiles, 500+ vendors, and 100+ event logistics details, and leveraged this database to pioneer a QR code-based check-in system.
+                    </li>
+                </ul>
+            </li>
+            <li class="experience__description">
+                <h3 class="experience__description__position">
+                    Front-End Web Developer 
+                </h3>
+                <p class="experience__description__date">
+                    August 2021 - June 2022
+                </p>
+                <ul>
+                    <li>
+                        Migrated and refactored multiple legacy PHP codebases to Angular and React, boosting website performance by 25%, to help products become customer-centric.
+                    </li>
+                    <li>
+                        Collaborated requirements gathering between business and technical teams to develop key features, and present technical solutions to executive stakeholders.
+                    </li>
+                    <li>
+                        Maintained the project wiki to track migration milestones and progress, along with detailed wiki entries to capture lessons learned and troubleshooting steps during the migration of legacy PHP codebases.
+                    </li>
+                    <li>
+                        Conducted daily cadence meetings and calls with technical teams to address roadblocks and deliver timely solutions.
+                    </li>
+                </ul>
+            </li>
+            <li class="experience__description">
+                <h3 class="experience__description__position">
+                    Data Science Intern 
+                </h3>
+                <p class="experience__description__date">
+                    November 2020 - June 2021
+                </p>
+                <ul>
+                    <li>
+                        Identified and integrated over 10 diverse data sources, including sales records and market trends, to build a predictive model and drive targeted marketing campaigns.
+                    <li>
+                        Developed an ETL data pipeline to automate the ingestion and cleansing of the integrated data sources to ensure consistent and accurate inputs for the predictive model.
+                    </li>
+                </ul>
+            </li>
+            <li class="experience__description">
+                <h3 class="experience__description__position">
+                    Data Analyst Intern 
+                </h3>
+                <p class="experience__description__date">
+                    May 2020 - August 2020
+                </p>
+                <ul>
+                    <li>
+                        Researched and analyzed sales data to drive targeted marketing campaigns.
+                    </li>
+                    <li>
+                        Leveraged machine learning algorithms utilizing exploratory data analysis (EDA) techniques to boost customer engagement by 30% and increase sales conversion by 25%.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+            <section
+                class="portfolio container"
+                data-scroll-section
+                id="projects-section">
+                <h2 class="portfolio__title section-heading">
+                    Some things I've Built
+                </h2>
+
+                <h3 class="portfolio__featured-projects">
+                    Here are some of my personal projects:
+                </h3>
+
+                <p class="portfolio__description">
+                    This collection features some of my favorite personal
+                    projects, which span a range of interests including Machine Learning, Mobile Application and
+                    Web Development. Each project has provided me with invaluable
+                    learning experiences and opportunities to hone my skills in
+                    various areas of programming.
+                </p>
+
+                <ul class="portfolio__personal-projects">
+                    <li class="portfolio__personal-project">
+                        <h4 class="portfolio__personal-project__title">
+                            Parkinson’s Disease Progression Prediction 
+                        </h4>
+                        <p class="portfolio__personal-project__text">
+                            The Goal is to predict the current and future UPDRS (Unified Parkinson's Disease Rating Scale) scores for patient’s suffering from Parkinson’s Disease based on proteins and peptide information from mass spectrometry readings of cerebrospinal fluid (CSF)
+                        </p>
+                        <ul class="portfolio__personal-project__technologies">
+                            <li>Python</li>
+                        </ul>
+                        <ul class="portfolio__personal-project__links">
+                            <li>
+                                <a
+                                    href="https://github.com/dsilvaian/Parkinsons-Disease-Progression-Prediction"
+                                    class="portfolio__project__button portfolio__project__button--outlined"
+                                >
+                                    Source Code
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="portfolio__personal-project">
+                        <h4 class="portfolio__personal-project__title">
+                            Gestational-Diabetes-Prediction-and-Analysis-in-Pregnant-Women
+                        </h4>
+                        <p class="portfolio__personal-project__text">
+                            Use statistical techniques to identify important aspects in the dataset. Additionally, run classification models to forecast the result, test the dataset, and determine performance metrics.
+                        </p>
+                        <ul class="portfolio__personal-project__technologies">
+                            <li>R</li>
+                        </ul>
+                        <ul class="portfolio__personal-project__links">
+                            <li>
+                                <a
+                                    href="https://github.com/dsilvaian/Gestational-Diabetes-Prediction-and-Analysis-in-Pregnant-Women"
+                                    class="portfolio__project__button portfolio__project__button--outlined"
+                                >
+                                    Source Code
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="portfolio__personal-project">
+                        <h4 class="portfolio__personal-project__title">
+                            Michael-Jordan-Wins-Classifier
+                        </h4>
+                        <p class="portfolio__personal-project__text">
+                            To predict whether a game that Michael Jordan played in resulted in a win (or loss) for his team. We determined this by building classification models using Jordan’s statistical data for each game.
+                        </p>
+                        <ul class="portfolio__personal-project__technologies">
+                            <li>R</li>
+                        </ul>
+                        <ul class="portfolio__personal-project__links">
+                            <li>
+                                <a
+                                    href="https://github.com/dsilvaian/Michael-Jordan-Wins-Classifier"
+                                    class="portfolio__project__button portfolio__project__button--outlined"
+                                >
+                                    Source Code
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a href="https://github.com/dsilvaian" class="portfolio__button">
+                    Check out my other projects!
+                </a>
+            </section> 
+
+            <section
+            class="portfolio container"
+            data-scroll-section
+            id="data-section">
+            <h2 class="portfolio__title section-heading">
+                Data Visualizations
+            </h2>
+
+            <h3 class="portfolio__featured-projects">
+                Here are some of my dashboards:
+            </h3>
+
+            <!-- <p class="portfolio__description">
+                This collection features some of my favorite personal
+                projects, which span a range of interests including Machine Learning, Mobile Application and
+                Web Development. Each project has provided me with invaluable
+                learning experiences and opportunities to hone my skills in
+                various areas of programming.
+            </p> -->
+
+            <ul class="portfolio__dashboard-sec">
+                <li class="portfolio__dashboard">
+                    <h4 class="portfolio__dashboard__title">
+                        European Sales Dashboard
+                    </h4>
+                    <p class="dashborad-img-sec">
+                        <img src="./assets/portfolio_images/European Sales Dashboard.png" alt="European Sales Dashboard" class="dashborad-img">
+                    </p>
+                    <ul class="portfolio__dashboard__links ">
+                        <li>
+                            <a
+                                href="https://public.tableau.com/app/profile/iandsilva/viz/EuropeanSalesDashboard_17354507827780/Dashboard1"
+                                class="portfolio__project__button portfolio__project__button--outlined"
+                            >
+                                Source Code
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="portfolio__dashboard">
+                    <h4 class="portfolio__dashboard__title">
+                        Netflix Statistics Dashboard
+                    </h4>
+                    <p class="dashborad-img-sec">
+                        <img src="./assets/portfolio_images/Netflix.png" alt=" Netflix Statistics Dashboard" class="dashborad-img">
+                    </p>
+                    <ul class="portfolio__dashboard__links ">
+                        <li>
+                            <a
+                                href="https://public.tableau.com/app/profile/iandsilva/viz/Netflix_17355270603420/Netflix"
+                                class="portfolio__project__button portfolio__project__button--outlined"
+                            >
+                                Source Code
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="portfolio__dashboard">
+                    <h4 class="portfolio__dashboard__title">
+                        Adidas US Sales Dashboard
+                    </h4>
+                    <p class="dashborad-img-sec">
+                        <img src="./assets/portfolio_images/Adidas USA Sales Dashboard.png" alt="Adidas US Sales Dashboard" class="dashborad-img">
+                    </p>
+                    <ul class="portfolio__dashboard__links ">
+                        <li>
+                            <a
+                                href="https://public.tableau.com/app/profile/iandsilva/viz/AdidasUSASalesDashboard_17354163273070/AdidasUSASalesDashboard"
+                                class="portfolio__project__button portfolio__project__button--outlined"
+                            >
+                                Source Code
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="portfolio__dashboard">
+                    <h4 class="portfolio__dashboard__title">
+                        Co2 Emission Dashboard
+                    </h4>
+                    <p class="dashborad-img-sec">
+                        <img src="./assets/portfolio_images/Co2 Emission Dashboard.png" alt="Co2 Emission Dashboard" class="dashborad-img">
+                    </p>
+                    <ul class="portfolio__dashboard__links ">
+                        <li>
+                            <a
+                                href="https://public.tableau.com/app/profile/iandsilva/viz/GlobalCO2emissions_16736654269230/Dashboard1"
+                                class="portfolio__project__button portfolio__project__button--outlined"
+                            >
+                                Source Code
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="portfolio__dashboard">
+                    <h4 class="portfolio__dashboard__title">
+                        World Happiness Statistics
+                    </h4>
+                    <p class="dashborad-img-sec">
+                        <img src="./assets/portfolio_images/World Happiness Statistics.png" alt="World Happiness Statistics" class="dashborad-img">
+                    </p>
+                    <ul class="portfolio__dashboard__links ">
+                        <li>
+                            <a
+                                href="https://public.tableau.com/app/profile/iandsilva/viz/WorldHappiness_16737118322840/WorldHappinessStatistics"
+                                class="portfolio__project__button portfolio__project__button--outlined"
+                            >
+                                Source Code
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <a href="https://github.com/dsilvaian" class="portfolio__button">
+                Check out my other projects!
+            </a>
+        </section> 
+
+
+
+            <section
+                class="contact container"
+                id="contact-section"
+                data-scroll-section
+            >
+                <div class="contact__text-content">
+                    <h2 class="contact__title">Get in Touch</h2>
+                    <p class="contact__text">
+                        I believe that building strong connections
+                        can lead to incredible opportunities and growth for both
+                        parties. Let's start a conversation and see where it
+                        takes us!
+                    </p>
+
+                    <div class="contact__email">
+                        <a href="mailto:dsilvaian.info@gmail.com">
+                            dsilvaian.info@gmail.com
+                        </a>
+                    </div>
+                    <aside
+                        class="social"
+                        data-scroll
+                        data-scroll-position="bottom"
+                    >
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a
+                                    class="social__link"
+                                    href="https://github.com/dsilvaian"
+                                    aria-label="GitHub"
+                                >
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a
+                                    class="social__link"
+                                    href="https://www.linkedin.com/in/ian-dsilva/"
+                                    aria-label="LinkedIn"
+                                >
+                                    <i class="fa fa-linkedin-square"></i>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a
+                                    class="social__link"
+                                    href="mailto:dsilvaian.info@gmail.com"
+                                    aria-label="Email"
+                                >
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li class="social__line"></li>
+                        </ul>
+                    </aside>
+                </div>
+                <!-- <form
+                    name="contact-form"
+                    class="contact__form"
+                    action="POST"
+                    id="contact-form"
+                    data-netlify="true"
+                >
+                    <h2 class="contact__form__title">Say Hello!</h2>
+
+                    <div class="contact__form__field">
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Enter your name"
+                            required
+                            class="contact__form__input"
+                        />
+                        <label for="name" class="contact__form__label"
+                            >Name</label
+                        >
+                    </div>
+                    <div class="contact__form__field">
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                            class="contact__form__input"
+                        />
+                        <label for="email" class="contact__form__label"
+                            >Email</label
+                        >
+                    </div>
+                    <div class="contact__form__field">
+                        <input
+                            type="text"
+                            name="subject"
+                            id="subject"
+                            placeholder="Enter your subject"
+                            required
+                            class="contact__form__input"
+                        />
+                        <label for="subject" class="contact__form__label"
+                            >Subject</label
+                        >
+                    </div>
+                    <div class="contact__form__field">
+                        <textarea
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="10"
+                            placeholder="Enter your message"
+                            required
+                            class="contact__form__input contact__form__input--textarea"
+                        ></textarea>
+                        <label
+                            for="message"
+                            class="contact__form__label contact__form__label--textarea"
+                            >Message</label
+                        >
+                    </div>
+                    <button
+                        type="submit"
+                        class="contact__form__button"
+                        id="contact-form-submit-button"
+                    >
+                        Send Message
+                    </button>
+                </form> -->
+                <div class="contact__footer"></div>
+            </section>
+        </main>
+
+        <footer>
+            <!-- <p class="footer__text">
+                Created by Reuel D'silva
+            </p> -->
+        </footer>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <script src="./index.js"></script>
+        <!-- Cloudflare Web Analytics -->
+        <script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon='{"token": "226927b605e745faa109cd83c1ea926f"}'
+        ></script>
+        <!-- End Cloudflare Web Analytics -->
+    </body>
+</html>
